@@ -1,0 +1,23 @@
+#Server Config
+server:
+    port: 9090
+
+#DB Config
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: root
+        url: jdbc:mysql://localhost:3306/sprinboot?createDatabaseIfNotExist=true
+        username: root
+
+#Jpa Config
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        hibernate:
+            ddl-auto: create
+        show-sql: true
+
+# Jwt Secrete
+app:
+    token:
+        secret: C0D38$@^&DTGreenko######$$$$$$$$
