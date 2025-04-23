@@ -14,9 +14,10 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 @Component
-public class JwtUtils {
+public class JwtUtil {
 
     AeadAlgorithm alg = Jwts.ENC.A256CBC_HS512;
+
     @Value("${app.token.secret}")
     private String secret;
 

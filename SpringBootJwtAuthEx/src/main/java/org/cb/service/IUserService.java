@@ -5,8 +5,8 @@ import org.cb.entity.Users;
 
 public interface IUserService {
 
-    public Integer saveUser(Users user);
+    Integer saveUser(Users user);
 
-    public Users findByUsername(String name);
+    Users findByUsername(String name);
 
 }
